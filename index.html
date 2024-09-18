@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Bento grid</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./src/input.css" />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body
+    class="relative bg-[#f5f5f5] flex flex-col items-center justify-center py-10 pb-16 md:py-16"
+  >
+    <main
+      class="max-w-6xl w-11/12 grid sm:grid-cols-2 lg:grid-cols-4 gap-8 [&>section]:rounded-lg"
+    >
+      <!-- social media -->
+      <section
+        class="py-12 px-8 flex flex-col items-center justify-center gap-8 bg-p500 text-white text-center lg:col-start-2 sm:col-span-2 sm:row-start-3 sm:order-4 lg:row-start-1 lg:row-span-2"
+      >
+        <h1 class="text-6xl max-w-[12ch] font-medium">
+          Social Media <span class="text-y500">10x</span> <em>Faster</em> with
+          AI
+        </h1>
+        <div class="space-y-2 grid place-items-center">
+          <img
+            src="./assets/images/illustration-five-stars.webp"
+            alt=""
+            class="max-w-44"
+          />
+          <p class="text-slate-100 font-normal">Over 4,000 5-star reviews</p>
+        </div>
+      </section>
+
+      <!-- manage accounts -->
+      <section
+        class="bg-white overflow-hidden p-6 space-y-6 sm:row-start-2 sm:order-3 sm:col-start-2 lg:order-5 lg:row-span-2 lg:row-start-3"
+      >
+        <div
+          class="flex items-center gap-4 [&_article]:rounded-full [&_article]:shadow-2xl [&_article]:shadow-gray-500/20 [&_article]:p-3.5 [&_article]:flex [&_article]:items-center [&_article]:gap-3"
+        >
+          <article>
+            <div
+              class="size-12 rounded-full bg-y500 grid place-items-center text-2xl text-p500"
+            >
+              <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+
+            <div class="flex flex-col leading-4">
+              <p class="text-lg font-medium">@YourCo</p>
+              <p class="text-sm text-gray-400 font-normal min-w-max">
+                12k followers
+              </p>
+            </div>
+          </article>
+          <article>
+            <div
+              class="size-12 rounded-full bg-y500 grid place-items-center text-2xl text-p500"
+            >
+              <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+
+            <div class="flex flex-col leading-4">
+              <p class="text-lg font-medium">@YourCo</p>
+              <p class="text-sm text-gray-400 font-normal">8k followers</p>
+            </div>
+          </article>
+        </div>
+
+        <h2
+          class="text-3xl lg:text-[2.05rem] lg:leading-8 font-medium leading-7"
+        >
+          Manage multiple accounts and platforms.
+        </h2>
+      </section>
+
+      <!-- maintain schedule -->
+      <section
+        class="bg-y500 p-6 pb-0 space-y-8 overflow-hidden sm:order-2 lg:order-4 lg:row-span-2 lg:max-h-80"
+      >
+        <h2
+          class="text-3xl lg:text-[2.05rem] lg:leading-8 font-medium leading-[1.85rem]"
+        >
+          Maintain a consistent posting schedule.
+        </h2>
+
+        <img
+          src="./assets/images/illustration-consistent-schedule.webp"
+          alt=""
+          class="max-w-64 w-full"
+        />
+      </section>
+
+      <!-- schedule media -->
+      <section
+        class="bg-[#dcd1fc] py-12 px-8 text-center sm:text-left overflow-hidden space-y-6 sm:row-start-4 sm:row-span-2 sm:order-6 sm:col-start-2 lg:col-start-4 lg:row-start-1 lg:row-span-4"
+      >
+        <h2 class="text-3xl font-medium leading-[1.85rem]">
+          Schedule to social media.
+        </h2>
+        <img
+          src="./assets/images/illustration-schedule-posts.webp"
+          alt=""
+          class="w-full max-w-96 sm:w-96 mx-auto sm:mx-0"
+        />
+        <p class="text-lg text-gray-700 font-normal">
+          Optimize post timings to publish content at the perfect time for your
+          audience.
+        </p>
+      </section>
+
+      <!-- grow followers -->
+      <section
+        class="bg-[#7651dc] p-6 flex flex-col sm:flex-row items-center gap-10 sm:order-7 sm:col-span-2"
+      >
+        <img
+          src="./assets/images/illustration-grow-followers.webp"
+          alt=""
+          class="max-w-56 sm:max-w-64"
+        />
+        <p
+          class="text-4xl md:text-5xl lg:text-3xl font-medium leading-[1.85rem] text-slate-100 text-center sm:text-left max-w-[10ch]"
+        >
+          Grow followers with non-stop content.
+        </p>
+      </section>
+
+      <!-- fastest audience -->
+      <section
+        class="bg-white space-y-7 p-8 sm:row-start-4 sm:order-8 lg:row-start-5 lg:col-start-2"
+      >
+        <div class="space-y-2">
+          <h3 class="text-5xl font-medium">&gt56%</h3>
+          <p class="text-lg font-medium leading-4">faster audience growth</p>
+        </div>
+        <img
+          src="./assets/images/illustration-audience-growth.webp"
+          alt=""
+          class="max-w-44"
+        />
+      </section>
+
+      <!-- create schedule -->
+      <section
+        class="bg-y100 space-y-8 p-8 sm:flex sm:flex-col sm:justify-evenly sm:col-start-1 sm:row-span-2 lg:row-span-3 sm:row-start-1 sm:order-1"
+      >
+        <h3 class="text-3xl sm:text-4xl font-medium leading-[1.85rem]">
+          Create and schedule content <em class="text-p500">quicker.</em>
+        </h3>
+        <img src="./assets/images/illustration-create-post.webp" alt="" />
+      </section>
+
+      <!-- ai-content -->
+      <section
+        class="bg-y500 p-8 space-y-7 sm:flex sm:flex-col sm:justify-evenly sm:row-start-5 sm:order-8 lg:row-span-2 lg:row-start-4 lg:col-start-1"
+      >
+        <h3 class="text-3xl sm:text-4xl font-medium leading-[1.85rem]">
+          Write your content using AI.
+        </h3>
+
+        <img src="./assets/images/illustration-ai-content.webp" alt="" />
+      </section>
+    </main>
+
+    <div class="attribution absolute bottom-3 left-1/2 -translate-x-1/2">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Benedict Jr.</a>
+    </div>
+
+    <!-- ionic -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
